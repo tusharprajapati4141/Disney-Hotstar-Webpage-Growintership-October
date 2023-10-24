@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney+Hotstar-Watch TV Shows</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: black;
+    }
+    .sidemenu{
+        height: 736px;
+        width: 150px;
+        position: relative;
+        left: 0;
+        position: fixed;
+    }
+    .logo{
+        position: absolute;
+        left: 45px;
+        top: 20px;
+    }
+    p1{
+        position: absolute;
+        color: gold;
+        top: 90px;
+        left: 45px;
+    }
+    div.banner1{
+        position: relative;
+        height: 330px;
+        width: 80%;
+        border-radius: 20px;
+        top: 20px;
+        left: 200px;
+    }
+    .logo2{
+        position: absolute;
+        border-radius: 20px;
+        height: 300px;
+        cursor: pointer;
+    }
+    .logo3{
+        position: absolute;
+        height: 60px;
+        left: 63%;
+        top: 50px;
+    }
+    p2{
+        position: absolute;
+        font-size: 19px;
+        color: white;
+        left: 69%;
+        top: 70px;
+    }
+    p3{
+        position: absolute;
+        font-size: 22px;
+        color: white;
+        left: 63%;
+        top: 150px;
+    }
+    button{
+        position: absolute;
+        text-align: center;
+        background-color: rgba(169, 169, 169, 0.333);
+        border-radius: 10px;
+        color: white;
+        left: 63%;
+        border: none;
+        font-size: 21px;
+        cursor: pointer;
+        top: 220px;
+        height: 50px;
+        width: 160px;
+    }
+    .imganimation{
+         height: 600px;
+         width: 85%;
+         margin-left: 200px;
+         border-radius: 20px;
+         margin-top: 20px;
+    }
+    .button1{
+         background-color:white;
+         height: 50px;
+         width: 50px;
+         margin-top: 400px;
+         margin-left: -740px;
+    }
+    .button2{
+         background-color:white;
+         height: 50px;
+         width: 60px;
+         margin-top: 400px;
+         margin-left: 460px;
+    }
+    .animationbox{
+        position: relative;
+    }
+    .box1{
+        height: 280px;
+        width: 84%;
+        margin-left: 210px;
+        margin-top: 20px;
+    }
+    .box1image{
+        margin-left: 10px;
+        margin-top: 20px;
+        border-radius: 10px;
+        transform:
+        perspective(750px)
+        translate3d(0px, 0px, -150px)
+        rotateX(3deg)
+        scale(0.9, 0.9);
+        border-radius: 20px;
+        transition: 0.4s ease-in-out transform;
+        cursor: pointer;
+    }
+    .box1image:hover {
+    transform: translate3d(0px, 0px, -250px);
+    }
+    h2{
+    color: white;
+    margin-left: 40px;
+    margin-top: 30px;
+    }
+    .box2{
+        height: 280px;
+        width: 85%;
+        margin-left: 210px;
+        margin-top: 20px;
+    }
+    .box2image{
+        margin-left: 3px;
+        margin-top: -20px;
+        border-radius: 10px;
+        transform:
+        perspective(750px)
+        translate3d(0px, 0px, -150px)
+        rotateX(3deg)
+        scale(0.9, 0.9);
+        border-radius: 20px;
+        transition: 0.4s ease-in-out transform;
+        cursor: pointer;
+    }
+    .box2image:hover {
+    transform: translate3d(0px, 0px, -250px);
+  }
+  h2{
+    color: black+;
+    margin-left: 40px;
+  }
+  .box3{
+        height: 280px;
+        width: 85%;
+        margin-left: 210px;
+        margin-top: 30px;
+    }
+    .box3image{
+        margin-left: 3px;
+        margin-top: -20px;
+        border-radius: 10px;
+        transform:
+        perspective(750px)
+        translate3d(0px, 0px, -150px)
+        rotateX(3deg)
+        scale(0.9, 0.9);
+        border-radius: 20px;
+        transition: 0.4s ease-in-out transform;
+        cursor: pointer;
+    }
+    .box3image:hover {
+    transform: translate3d(0px, 0px, -250px);
+    }
+    h2{
+    color: black+;
+    margin-left: 40px;
+    }
+  .box4{
+        height: 280px;
+        width: 85%;
+        margin-left: 210px;
+        margin-top: 30px;
+    }
+    .box4image{
+        margin-left: 3px;
+        margin-top: -20px;
+        border-radius: 10px;
+        transform:
+        perspective(750px)
+        translate3d(0px, 0px, -150px)
+        rotateX(3deg)
+        scale(0.9, 0.9);
+        border-radius: 20px;
+        transition: 0.4s ease-in-out transform;
+        cursor: pointer;
+    }
+    .box4image:hover {
+    transform: translate3d(0px, 0px, -250px);
+    }
+    h2{
+    color: black+;
+    margin-left: 40px;
+    }
+    footer{
+        position: relative;
+        height: 300px;
+        width: 85%;
+        top: 60px;
+        left: 210px;
+    }
+    ol{
+        position: absolute;
+        top: 70px;
+        left: 5px;
+    }
+    a.footerclass{
+       color: rgb(152, 151, 151);
+       text-decoration: none;
+    }
+    h4{
+        font-size: larger;
+        color: white;
+    }
+    .ol2{
+        position: absolute;
+        left: 320px;
+    }
+    .ol3{
+        position: absolute;
+        left: 730px;
+    }
+    .ol4{
+        position: absolute;
+        left:88%;
+    }
+    p4{
+        position: absolute;
+        color: rgb(152, 151, 151);
+        cursor: pointer;
+        font-size: 18px;
+        left: 5px;
+        top: 250px;
+    }
+    .facebook{
+      position: absolute;
+      bottom: -13px;
+    }
+    .instagram{
+        position: absolute;
+        bottom: -15px;
+    }
+    img.googleplaylogo{
+        position: absolute;
+        top: 250px;
+        left: 78%;
+        cursor: pointer;
+    }
+    img.maclogo{
+        position: absolute;
+        top: 250px;
+        left: 89%;
+        cursor: pointer;
+    }
+    .button3{
+        background-color: rgb(57, 57, 57);
+        border-radius: 20px;
+        height: 80px;
+        width: 400px;
+        margin-left: -700px;
+        margin-top: 200px;
+    }
+</style>
+<body>
+    <div class="sidemenu">
+      <img class="logo" src="https://img.hotstar.com/image/upload/v1656431456/web-images/logo-d-plus.svg" height="50px">
+          <a href="#"><p1>Subscribe</p1></a>
+          <a href="#"><i class="fa-solid fa-user fa-xl" style="color: white; margin-left: 70px; margin-top: 280px;"></i></a>
+          <a href="#"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: white; margin-left: 70px; margin-top: 80px;"></i></a>
+          <a href="#"><i class="fa-solid fa-house fa-xl" style="color: white; margin-left: 70px; margin-top: 80px;"></i></a>
+          <a href="#"><i class="fa-solid fa-tv fa-xl" style="color: white; margin-left: 70px; margin-top: 80px;"></i></a>
+          <a href="#"><i class="fa-solid fa-film fa-xl" style="color: white; margin-left: 70px; margin-top: 80px;"></i></a>
+    </div>
+    <div class="banner1">
+        <img class="logo2" src="https://shifu.hotstarext.com/SOURCE/VOD/cd-2023-10-06/WC23GenericDRFoM_deskXBB-663421d7-3f5b-49fe-80ac-b18bdc83ec03.jpg">
+        <img class="logo3" src="https://brand-img1.hotstarext.com/image/upload/v1585728139/Disnet%20Plus%20Hotstar%20Logo/D_Hotstar_logo_Dark_BG_120x120.png">
+        <p2>Disney+Hotstar</p2>
+        <p3>Why Wait When You Can Enjoy All Rounder<br>
+            Entertainment!
+        </p3>
+        <button>Subscribe</button>
+    </div>
+    <div class="animationbox"> 
+        <img src="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/283/1370283-i-c45c6aedc098" alt="" class="imganimation">
+        <button class="button3">
+            <p5>Watch Now +</p5>
+        </button>
+    </div>
+    <button class="button1" onclick="next()"><img src="https://banner2.cleanpng.com/20190103/azh/kisspng-arrow-computer-icons-portable-network-graphics-enc-angle-double-left-svg-png-icon-free-download-348-5c2eb7299b8586.432883961546565417637.jpg" height="20px"></button>
+    <button class="button2" onclick="previous()"><img src="https://banner2.cleanpng.com/20190224/xoj/kisspng-scalable-vector-graphics-computer-icons-arrow-port-fast-forward-double-right-arrows-svg-png-icon-free-5c7228d4056830.5268401115509854280222.jpg" height="20px"></button>
+    <script>
+        let images=['https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/7033/1607033-i-d6f937c102ac',
+        'https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/9896/1609896-i-973d2a8a1152',
+        'https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/7985/1597985-i-c2a7a7b170ca',
+        'https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/7516/1597516-i-751da827e22b',
+        'https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/5471/1565471-i-18f6334d9e6c',
+        'https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/283/1370283-i-c45c6aedc098',
+    ];
+    let i=0;
+     let imagetag=document.querySelector('.imganimation')
+     function next()
+     {
+        if(i>=5)
+        {
+          return false;
+        }
+        i++;
+        imagetag.setAttribute('src',images[i]);
+     }
+     setInterval(next,3000,);
+     function previous()
+     {
+        if(i<=0)
+        {
+            return false;
+
+        }
+        i--;
+        imagetag.setAttribute('src',images[i]);
+     }     
+    </script>
+     <div class="box1">
+        <h2>ICC CWC 2023 and More</h2>
+        <span><img class="box1image" src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/9454/1609454-h-846b810df7a5" height="200px" width="300px"></span>
+        <span><img class="box1image" src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/451/1610451-h-cdb28ec181fe"height="200px" width="300px"></span>
+        <span><img class="box1image" src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/817/1610817-h-9ed12d2be2e8"height="200px" width="300px"></span>
+        <span><img class="box1image" src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/889/1610889-h-e211a011618a"height="200px" width="300px"></span>
+    </div>
+    <div class="box2">
+        <h2>Best of Superheros</h2>
+        <span><img class="box2image" src="https://preview.redd.it/guys-here-are-my-custom-movie-posters-captain-america-4-v0-0rmg0htxiuqa1.jpg?width=1080&crop=smart&auto=webp&s=699aaf5dc89b76ec0373bc447266b1c9af81dd58" height="300px" width="250px"></span>
+        <span><img class="box2image" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOZ_Qmjk5-MJ8ZV3Pygz1RvQhO1g_1POlHrtnYtEbM6VMx3d7y"height="300px" width="250px"></span>
+        <span><img class="box2image" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-NA5o1W7vSOSYfaUJSLfMSKfkBeuTjqfKD8Q9pFHRIYgNgHNQ"height="300px" width="250px"></span>
+        <span><img class="box2image" src="https://cdn.marvel.com/u/prod/marvel/i/mg/c/80/567065cfebad5/clean.jpg"height="300px" width="250px"></span>
+        <span><img class="box2image" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAiGoLod_ORCVwf0Tf_Fk1DPmZBA2OPE0B37OsKrEsMCJheY0R"height="300px" width="250px"></span>
+
+    </div>
+    <div class="box3">
+        <h2>Critically Acclaimed Movies</h2>
+        <span><img class="box3image" src="https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/2600cff4-9253-463e-b844-febe25d2efe9/600x900" height="300px" width="250px"></span>
+        <span><img class="box3image" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpf8e_yz1myqKNJaqpM_6WX4BWl2-BWgZ1zQmk9f2t3Yl1xJno"height="300px" width="250px"></span>
+        <span><img class="box3image" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-KgbXbtEnJR3Y1wHFgZfchF7o8mKXFp6-mNVT5blxSfkc8vKh"height="300px" width="250px"></span>
+        <span><img class="box3image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdvh9tC6Aawao4yxNq3OIPyqR8RAgmUTp6lbL15GLh-Yx37faS"height="300px" width="250px"></span>
+        <span><img class="box3image" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRB31VxqlQrKXHILkOIQ2VTZbgDeddYUy6FeqESAGAeCYwY5062"height="300px" width="250px"></span>
+
+    </div>
+    <div class="box4">
+        <h2>Popular in Mythology</h2>
+        <span><img class="box4image" src="https://upload.wikimedia.org/wikipedia/ru/f/f4/Devon_Ke_Dev...Mahadev.jpg" height="300px" width="250px"></span>
+        <span><img class="box4image" src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/3SiMmfY0663JmjpAfftmj1h6XGP.jpg"height="300px" width="250px"></span>
+        <span><img class="box4image" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhf-I2b9JIw41b9hpvF6D1NyipMZy_pqkPpVRl0D-y-PEc6JvA"height="300px" width="250px"></span>
+        <span><img class="box4image" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3xQMQcHGXmDOIgtPNqxM5xwPZVhh3YqImw8PoQqUdp5tHDfPA"height="300px" width="250px"></span>
+        <span><img class="box4image" src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/rv3eLAme13nrgP8eUiTsLW1ZYZQ.jpg"height="300px" width="250px"></span>
+    </div>
+    <footer>
+        <ol>
+            <h4>Company</h4><br><br>
+            <a class="footerclass" href="#">About us</a><br><br>
+            <a class="footerclass" href="#">Careers</a><br><br>
+        </ol>
+        <ol class="ol2">
+            <h4>View Website in</h4><br><br>
+            <a class="footerclass" href="#">English</a><br><br>
+            <a class="footerclass" href="#">Hindi</a><br><br>
+        </ol>
+        <ol class="ol3">
+            <h4>Need Help?</h4><br><br>
+            <a class="footerclass" href="#">Share Feedback</a><br><br>
+            <a class="footerclass" href="#">Visit Help Center</a><br><br>
+        </ol>
+        <ol class="ol4">
+            <h4>Contact with Us</h4><br><br>
+            <a class="footerclass" href="#"><img class="facebook" src="https://static.vecteezy.com/system/resources/previews/018/930/481/original/facebook-logo-facebook-icon-transparent-free-png.png" height="60px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="footerclass" href="#"><img class="instagram" src="https://static.vecteezy.com/system/resources/previews/023/986/521/non_2x/instagram-logo-instagram-logo-transparent-instagram-icon-transparent-free-free-png.png" height="60px"></a>
+        </ol>
+        <p4>@ 2023 STAR. All Right Reserved<br>
+            Terms Of Use  Privacy Policy FAQ</p4>
+        <img class="googleplaylogo" src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_256/v1661346101/google-playstore" height="40px">
+        <img class="maclogo" src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_256/v1661346071/ios-appstore" height="40px">    
+    </footer>
+    </body>
+</html>
